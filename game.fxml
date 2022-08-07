@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.ConnectFour.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="296.0" minWidth="254.0" prefWidth="254.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="playerOneTextField" alignment="CENTER" promptText="Player One">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="playerTwoTextField" alignment="CENTER" promptText="Player Two">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="setNamesButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="255.0" text="Set Names">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="40.0" prefWidth="301.0" text="Player One" textFill="WHITE">
+               <font>
+                  <Font name="AR CENA" size="36.0" />
+               </font>
+               <padding>
+                  <Insets top="90.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="300.0" text="It's your turn!" textFill="#f8f8f8">
+               <font>
+                  <Font name="AR CENA" size="24.0" />
+               </font></Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+    </children>
+</GridPane>
